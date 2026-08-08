@@ -1,4 +1,4 @@
-🏋️ Gym Management System
+**🏋️ Gym Management System **
 
 A desktop-based Gym Management System developed in Java to simplify the management of gym members, trainers, and workout records. The application provides an intuitive interface for managing member information while demonstrating object-oriented programming, database connectivity, and layered software architecture.
 
