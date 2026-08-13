@@ -6,8 +6,9 @@
 
 <p>
 <strong>
-A desktop-based Gym Management System developed in Java to simplify
-the management of gym members, trainers, and workout records.
+A desktop-based Gym Management System developed using Java,
+Java Swing, JDBC, and MySQL to simplify gym member management
+through a structured and user-friendly application.
 </strong>
 </p>
 
@@ -26,23 +27,81 @@ the management of gym members, trainers, and workout records.
 <h2>📌 Overview</h2>
 
 <p>
-The <strong>Gym Management System</strong> is a desktop-based application
-developed using Java to streamline common gym management operations.
+The <strong>Gym Management System</strong> is a desktop-based Java
+application designed to streamline common gym management operations.
 It provides administrators with a user-friendly interface for managing
 gym member information and maintaining records efficiently.
 </p>
 
 <p>
 The application demonstrates practical implementation of
-<strong>Object-Oriented Programming, database connectivity, Java Swing,
-JDBC, and layered software architecture</strong>.
+<strong>Object-Oriented Programming, Java Swing, JDBC, MySQL,
+database connectivity, CRUD operations, and layered software
+architecture</strong>.
 </p>
 
 <p>
 The project follows a modular structure using separate packages for
-database operations, business logic, models, utilities, and the graphical
-user interface.
+database operations, business logic, models, utilities, and the
+graphical user interface.
 </p>
+
+<hr>
+
+<h2>🏆 Project Highlights</h2>
+
+<table>
+<thead>
+<tr>
+<th>Category</th>
+<th>Details</th>
+</tr>
+</thead>
+
+<tbody>
+
+<tr>
+<td>🏋️ Project Type</td>
+<td>Desktop Management Application</td>
+</tr>
+
+<tr>
+<td>☕ Programming Language</td>
+<td>Java</td>
+</tr>
+
+<tr>
+<td>🖥️ User Interface</td>
+<td>Java Swing</td>
+</tr>
+
+<tr>
+<td>💾 Database</td>
+<td>MySQL</td>
+</tr>
+
+<tr>
+<td>🔗 Connectivity</td>
+<td>JDBC</td>
+</tr>
+
+<tr>
+<td>🧱 Architecture</td>
+<td>Layered Architecture</td>
+</tr>
+
+<tr>
+<td>📂 Design Pattern</td>
+<td>DAO and Model-based Structure</td>
+</tr>
+
+<tr>
+<td>🔄 Core Operations</td>
+<td>Create, Read, Update, Delete &amp; Search</td>
+</tr>
+
+</tbody>
+</table>
 
 <hr>
 
@@ -51,10 +110,11 @@ user interface.
 <ul>
 <li>Simplify the management of gym member records.</li>
 <li>Provide an easy-to-use desktop interface.</li>
-<li>Store member information securely in a MySQL database.</li>
+<li>Store member information using a MySQL database.</li>
 <li>Implement CRUD operations for member management.</li>
 <li>Demonstrate Object-Oriented Programming concepts.</li>
 <li>Implement database connectivity using JDBC.</li>
+<li>Separate UI, business logic, and database operations.</li>
 <li>Follow a modular and maintainable software architecture.</li>
 </ul>
 
@@ -74,6 +134,7 @@ user interface.
 <li>🔗 JDBC database connectivity</li>
 <li>📂 DAO and Model-based architecture</li>
 <li>🧩 Modular package structure</li>
+<li>💾 Persistent member records</li>
 </ul>
 
 <hr>
@@ -102,12 +163,12 @@ user interface.
 
 <tr>
 <td>🔗 JDBC</td>
-<td>Database connectivity</td>
+<td>Communication between Java and MySQL</td>
 </tr>
 
 <tr>
 <td>🐬 MySQL</td>
-<td>Database management</td>
+<td>Database management and persistent storage</td>
 </tr>
 
 <tr>
@@ -118,6 +179,63 @@ user interface.
 <tr>
 <td>🧱 Object-Oriented Programming</td>
 <td>Application design and implementation</td>
+</tr>
+
+</tbody>
+</table>
+
+<hr>
+
+<h2>🧩 Technology &amp; Responsibility</h2>
+
+<table>
+<thead>
+<tr>
+<th>Technology / Component</th>
+<th>Responsibility</th>
+</tr>
+</thead>
+
+<tbody>
+
+<tr>
+<td>Java</td>
+<td>Application logic and system implementation</td>
+</tr>
+
+<tr>
+<td>Java Swing</td>
+<td>Graphical user interface</td>
+</tr>
+
+<tr>
+<td>JDBC</td>
+<td>Database connectivity</td>
+</tr>
+
+<tr>
+<td>MySQL</td>
+<td>Persistent data storage</td>
+</tr>
+
+<tr>
+<td>DAO</td>
+<td>Database access operations</td>
+</tr>
+
+<tr>
+<td>Model</td>
+<td>Application entities and data representation</td>
+</tr>
+
+<tr>
+<td>Service</td>
+<td>Business logic</td>
+</tr>
+
+<tr>
+<td>Utility</td>
+<td>Reusable database and configuration utilities</td>
 </tr>
 
 </tbody>
@@ -174,69 +292,69 @@ src/
 
 <hr>
 
-<h2>🏗️ Architecture</h2>
+<h2>🏗️ System Architecture</h2>
 
 <p>
 The application follows a layered architecture to separate different
 responsibilities within the system. This improves maintainability,
-readability, and scalability.
+readability, and organization.
 </p>
 
 <pre>
-                ┌──────────────────────┐
-                │     User / Admin     │
-                └──────────┬───────────┘
-                           ↓
-                ┌──────────────────────┐
-                │      UI Layer        │
-                │     Java Swing       │
-                └──────────┬───────────┘
-                           ↓
-                ┌──────────────────────┐
-                │   Service Layer      │
-                │   Business Logic     │
-                └──────────┬───────────┘
-                           ↓
-                ┌──────────────────────┐
-                │      DAO Layer       │
-                │ Database Operations  │
-                └──────────┬───────────┘
-                           ↓
-                ┌──────────────────────┐
-                │    MySQL Database    │
-                └──────────────────────┘
+                 ┌──────────────────────┐
+                 │     User / Admin     │
+                 └──────────┬───────────┘
+                            ↓
+                 ┌──────────────────────┐
+                 │      UI Layer        │
+                 │     Java Swing       │
+                 └──────────┬───────────┘
+                            ↓
+                 ┌──────────────────────┐
+                 │   Service Layer      │
+                 │   Business Logic     │
+                 └──────────┬───────────┘
+                            ↓
+                 ┌──────────────────────┐
+                 │      DAO Layer       │
+                 │ Database Operations  │
+                 └──────────┬───────────┘
+                            ↓
+                 ┌──────────────────────┐
+                 │    MySQL Database    │
+                 └──────────────────────┘
 </pre>
 
-<h3>UI Layer</h3>
+<h3>🖥️ UI Layer</h3>
 
 <p>
 The UI layer provides the graphical interface using Java Swing.
-Users can interact with the application through forms, buttons,
-tables, search functionality, and other interface components.
+Users interact with the application through forms, buttons, tables,
+search functionality, and other interface components.
 </p>
 
-<h3>Service Layer</h3>
+<h3>⚙️ Service Layer</h3>
 
 <p>
-The Service layer contains the application's business logic and
-coordinates operations between the user interface and database layer.
+The Service layer contains business logic and coordinates operations
+between the user interface and database layer.
 </p>
 
-<h3>DAO Layer</h3>
+<h3>🗄️ DAO Layer</h3>
 
 <p>
-The Data Access Object (DAO) layer handles database operations such as
+The Data Access Object layer handles database operations such as
 inserting, retrieving, updating, deleting, and searching member records.
 </p>
 
-<h3>Model Layer</h3>
+<h3>📦 Model Layer</h3>
 
 <p>
-The Model layer contains the entity classes used to represent application
+The Model layer contains entity classes used to represent application
 data such as gym members and other records.
 </p>
 
-<h3>Utility Layer</h3>
+<h3>🔧 Utility Layer</h3>
 
 <p>
 The Utility layer contains reusable components such as database
@@ -258,14 +376,27 @@ Member Management
     ↓
 ┌───────────┬───────────┬───────────┬───────────┐
 ↓           ↓           ↓           ↓
-Add       View        Update      Delete
-Member    Members     Member      Member
-    \         |          |          /
-     \        |          |         /
-      └───────┴──────────┴────────┘
+Add        View        Update      Delete
+Member     Members     Member      Member
+ \           |           |           /
+  \          |           |          /
+   └─────────┴───────────┴─────────┘
                     ↓
-              MySQL Database
+             MySQL Database
 </pre>
+
+<h3>Workflow Steps</h3>
+
+<ol>
+<li>User launches the desktop application.</li>
+<li>User authenticates through the login interface.</li>
+<li>The main management interface is displayed.</li>
+<li>The administrator selects a member management operation.</li>
+<li>The application processes the request through the Service layer.</li>
+<li>The DAO layer communicates with the MySQL database.</li>
+<li>The result is returned to the user interface.</li>
+<li>The updated member information is displayed.</li>
+</ol>
 
 <hr>
 
@@ -277,7 +408,7 @@ between the Java application and the database.
 </p>
 
 <p>
-The application supports standard CRUD operations:
+The application supports standard CRUD operations for member management.
 </p>
 
 <table>
@@ -291,22 +422,22 @@ The application supports standard CRUD operations:
 <tbody>
 
 <tr>
-<td><strong>Create</strong></td>
+<td>➕ <strong>Create</strong></td>
 <td>Add new gym member records.</td>
 </tr>
 
 <tr>
-<td><strong>Read</strong></td>
+<td>📖 <strong>Read</strong></td>
 <td>View and search existing member records.</td>
 </tr>
 
 <tr>
-<td><strong>Update</strong></td>
+<td>✏️ <strong>Update</strong></td>
 <td>Modify existing member information.</td>
 </tr>
 
 <tr>
-<td><strong>Delete</strong></td>
+<td>🗑️ <strong>Delete</strong></td>
 <td>Remove member records from the database.</td>
 </tr>
 
@@ -315,7 +446,236 @@ The application supports standard CRUD operations:
 
 <hr>
 
-<h2>🚀 Getting Started</h2>
+<h2>🔗 Database Connectivity</h2>
+
+<pre>
+Java Application
+       ↓
+     JDBC
+       ↓
+MySQL Connector/J
+       ↓
+MySQL Database
+</pre>
+
+<p>
+JDBC acts as the communication layer between the Java application
+and the MySQL database. MySQL Connector/J provides the required
+driver for establishing this connection.
+</p>
+
+<hr>
+
+<h2>🔐 Login &amp; Access</h2>
+
+<p>
+The application provides a login interface to control access to the
+management system.
+</p>
+
+<pre>
+Login Screen
+     ↓
+Authentication
+     ↓
+Valid Credentials?
+   ↙         ↘
+ Yes          No
+ ↓             ↓
+Dashboard    Access Denied
+</pre>
+
+<hr>
+
+<h2>🔍 Key Functionalities</h2>
+
+<h3>👤 Member Management</h3>
+
+<p>
+Administrators can add, view, update, delete, and search gym member
+records through the graphical interface.
+</p>
+
+<h3>🔐 Login System</h3>
+
+<p>
+The application provides a login interface to control access to
+the management system.
+</p>
+
+<h3>🔎 Search</h3>
+
+<p>
+Members can be searched by name to quickly locate specific records.
+</p>
+
+<h3>💾 Persistent Storage</h3>
+
+<p>
+Member information is stored in a MySQL database, allowing records
+to persist between application sessions.
+</p>
+
+<hr>
+
+<h2>🖥️ User Interface</h2>
+
+<p>
+The application uses Java Swing to provide a desktop-based graphical
+user interface.
+</p>
+
+<p>
+The interface is designed to allow administrators to perform common
+member management operations without directly interacting with the
+database.
+</p>
+
+<ul>
+<li>🔐 Login interface</li>
+<li>👤 Member registration form</li>
+<li>📋 Member records table</li>
+<li>🔍 Member search functionality</li>
+<li>✏️ Member update functionality</li>
+<li>🗑️ Member deletion functionality</li>
+</ul>
+
+<hr>
+
+<h2>📸 Results</h2>
+
+<p>
+
+</p>
+
+<table>
+<thead>
+<tr>
+<th>Screen</th>
+<th>Description</th>
+</tr>
+</thead>
+
+<tbody>
+
+<tr>
+<td>🔐 Login Screen</td>
+<td>Application authentication interface</td>
+</tr>
+
+<tr>
+<td>🏠 Main Dashboard</td>
+<td>Main application management interface</td>
+</tr>
+
+<tr>
+<td>👤 Add Member</td>
+<td>Member registration form</td>
+</tr>
+
+<tr>
+<td>📋 Member Records</td>
+<td>Display of stored member information</td>
+</tr>
+
+<tr>
+<td>✏️ Update Member</td>
+<td>Member information modification interface</td>
+</tr>
+
+<tr>
+<td>🔍 Search</td>
+<td>Member search functionality</td>
+</tr>
+
+</tbody>
+</table>
+
+<p align="center">
+<strong>
+
+</p>
+
+<hr>
+
+<h2>🧱 Object-Oriented Programming</h2>
+
+<p>
+The project demonstrates fundamental Object-Oriented Programming
+concepts through its modular Java implementation.
+</p>
+
+<table>
+<thead>
+<tr>
+<th>Concept</th>
+<th>Application</th>
+</tr>
+</thead>
+
+<tbody>
+
+<tr>
+<td><strong>Encapsulation</strong></td>
+<td>Data and related methods are organized within classes.</td>
+</tr>
+
+<tr>
+<td><strong>Abstraction</strong></td>
+<td>Database and business operations are separated from the UI.</td>
+</tr>
+
+<tr>
+<td><strong>Inheritance</strong></td>
+<td>Reusable class structures can be extended where appropriate.</td>
+</tr>
+
+<tr>
+<td><strong>Polymorphism</strong></td>
+<td>Methods and interfaces can support flexible implementations.</td>
+</tr>
+
+</tbody>
+</table>
+
+<hr>
+
+<h2>🧠 Key Concepts Demonstrated</h2>
+
+<ul>
+<li>☕ Java application development</li>
+<li>🧱 Object-Oriented Programming</li>
+<li>🖥️ Java Swing GUI development</li>
+<li>🔗 JDBC database connectivity</li>
+<li>🐬 MySQL database management</li>
+<li>🔄 CRUD operations</li>
+<li>📂 DAO architecture</li>
+<li>🏗️ Layered software architecture</li>
+<li>🔐 Authentication interface</li>
+<li>📦 Modular package organization</li>
+<li>💾 Persistent data storage</li>
+</ul>
+
+<hr>
+
+<h2>📚 What I Learned</h2>
+
+<ul>
+<li>Building desktop applications using Java Swing.</li>
+<li>Applying Object-Oriented Programming principles in a practical project.</li>
+<li>Connecting Java applications to MySQL using JDBC.</li>
+<li>Implementing CRUD operations.</li>
+<li>Organizing code using DAO, Model, Service, UI, and Utility layers.</li>
+<li>Separating user interface logic from database operations.</li>
+<li>Working with relational databases.</li>
+<li>Designing modular Java applications.</li>
+<li>Managing persistent application data.</li>
+<li>Understanding layered software architecture.</li>
+</ul>
+
+<hr>
+
+<h2>▶️ Getting Started</h2>
 
 <h3>Prerequisites</h3>
 
@@ -371,65 +731,41 @@ main class.
 
 <hr>
 
-<h2>🖥️ User Interface</h2>
-
-<p>
-The application uses Java Swing to provide a desktop-based graphical
-user interface.
-</p>
-
-<p>
-The interface is designed to allow administrators to perform common
-member management operations without directly interacting with the
-database.
-</p>
-
-<ul>
-<li>🔐 Login interface</li>
-<li>👤 Member registration form</li>
-<li>📋 Member records table</li>
-<li>🔍 Member search functionality</li>
-<li>✏️ Member update functionality</li>
-<li>🗑️ Member deletion functionality</li>
-</ul>
-
-<hr>
-
-<h2>🧱 Object-Oriented Programming</h2>
-
-<p>
-The project demonstrates several fundamental Object-Oriented Programming
-concepts through its modular Java implementation.
-</p>
+<h2>🗂️ Module Overview</h2>
 
 <table>
 <thead>
 <tr>
-<th>Concept</th>
-<th>Application</th>
+<th>Package</th>
+<th>Responsibility</th>
 </tr>
 </thead>
 
 <tbody>
 
 <tr>
-<td><strong>Encapsulation</strong></td>
-<td>Data and methods are organized within classes.</td>
+<td><code>dao/</code></td>
+<td>Database access and CRUD operations</td>
 </tr>
 
 <tr>
-<td><strong>Abstraction</strong></td>
-<td>Database and business operations are separated from the UI.</td>
+<td><code>model/</code></td>
+<td>Application entities and data classes</td>
 </tr>
 
 <tr>
-<td><strong>Inheritance</strong></td>
-<td>Reusable class structures can be extended where appropriate.</td>
+<td><code>service/</code></td>
+<td>Business logic and application operations</td>
 </tr>
 
 <tr>
-<td><strong>Polymorphism</strong></td>
-<td>Methods and interfaces can support flexible implementations.</td>
+<td><code>ui/</code></td>
+<td>Java Swing user interface</td>
+</tr>
+
+<tr>
+<td><code>util/</code></td>
+<td>Database and reusable utility functions</td>
 </tr>
 
 </tbody>
@@ -437,38 +773,7 @@ concepts through its modular Java implementation.
 
 <hr>
 
-<h2>🔍 Key Functionalities</h2>
-
-<h3>👤 Member Management</h3>
-
-<p>
-Administrators can add, view, update, delete, and search gym member
-records through the graphical interface.
-</p>
-
-<h3>🔐 Login System</h3>
-
-<p>
-The application provides a login interface to control access to
-the management system.
-</p>
-
-<h3>🔎 Search</h3>
-
-<p>
-Members can be searched by name to quickly locate specific records.
-</p>
-
-<h3>💾 Persistent Storage</h3>
-
-<p>
-Member information is stored in a MySQL database, allowing records
-to persist between application sessions.
-</p>
-
-<hr>
-
-<h2>📌 Limitations</h2>
+<h2>⚠️ Limitations</h2>
 
 <ul>
 <li>The current system primarily focuses on member management.</li>
@@ -476,6 +781,7 @@ to persist between application sessions.
 <li>Payment and billing functionality is not currently implemented.</li>
 <li>The application requires a local MySQL database connection.</li>
 <li>Database credentials must be configured before running the application.</li>
+<li>The application is currently designed as a desktop-based system.</li>
 </ul>
 
 <hr>
